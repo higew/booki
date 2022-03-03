@@ -1,0 +1,30 @@
+footer {
+    background-color: #F2F2F2;
+}
+
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.containerFooter .titleFooter {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.containerFooter p {
+    padding-bottom: 10px;
+}
+
+
+.containerFooter .about {
+    margin-right: 200px;
+}
+
+.containerFooter .hosting {
+    margin-right: 200px;
+}
