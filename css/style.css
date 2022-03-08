@@ -11,59 +11,8 @@ body {
 	background-color: #fff;
 }
 
-/* Début nav Top */
-
-#top {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	left: 0;
-	top: 0;
-	right: 0;
-	margin: auto;
-	width: 90%;
-}
-
-#top a {
-	/* color: white; */
-	text-decoration: none;
-}
-
-#top .logo {
-	background-image: url("../images/logo/Booki@3x.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 30%;
-}
-
-#top .sections {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	font-style: bold;
-}
-
-#top .sections ul {
-	margin-top: 20px;
-}
-
-#top .sections ul li {
-	display: inline;
-}
-
-#top .section {
-	padding: 40px;
-	color: black;
-	transition: 1s;
-}
-
-#top .section:hover {
-	color: #0065FC;
-	border-top: solid 10px;
-	border-color: #0065FC;
-	transition: 1s;
-}
-
-/* Fin Nav Top */
+@media screen and (max-width: 992px) {
+	body {
+	  background-color: blue;
+	}
+  }

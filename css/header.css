@@ -1,106 +1,56 @@
-/* Début du Header */
+/* Début nav Top */
 
-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 90%;
-	padding-left: 5%;
-	padding-top: 30px;
-}
-
-header h1 {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-header h2 {
-	font-size: 15px;
+nav {
+	padding-top: 20px;
 	padding-bottom: 20px;
-}
-
-.searchArea {
-	padding-bottom: 40px;
-}
-
-.searchArea form {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+	width: 90%;
 }
 
-.searchArea form .locPicto{
-	background-color: #F2F2F2;
-	border-radius: 20px 0px 0px 20px;
-	padding: 14px;
-	width: 40px;
-}
-
-.searchArea form input {
-	border: 1px #F2F2F2 solid;
-	border-radius: 0%;
-}
-
-.searchArea form button {
-	border: none;
-	background-color: #0065FC;
-	color: #ffffff;
-	padding: 14px;
-	text-align: center;
+nav a {
+	/* color: white; */
 	text-decoration: none;
-	display: inline-block;
-	border-radius: 0px 20px 20px 0px;
 }
 
-.filter {
+nav .logo {
+	background-image: url("../images/logo/Booki@3x.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30%;
+}
+
+nav .sections {
 	display: flex;
 	flex-direction: row;
-	padding-bottom: 40px;
+	justify-content: space-between;
+	font-style: bold;
 }
 
-.filter h3 {
-	padding-top: 14px;
+nav .sections ul {
+	margin-top: 20px;
 }
 
-.filter .filters {
-	display: flex;
-	flex-direction: row;
-	border: 2px #F2F2F2 solid;
-	border-radius: 20px;
-	margin-left: 20px;
+nav .sections ul li {
+	display: inline;
 }
 
-.filter i {
-	background-color: #DEEBFF;
+nav .section {
+	padding: 40px;
+	color: black;
+	transition: 1s;
+}
+
+nav .section:hover {
 	color: #0065FC;
-	/* height: 40px;
-	width: 40px; */
-	padding: 14px;
-	border-radius: 20px;
+	border-top: solid 10px;
+	border-color: #0065FC;
+	transition: 1s;
 }
 
-.filter p {
-	padding: 14px;
-}
-
-.countAvailable {
-	display: flex;
-	flex-direction: row;
-	font-size: 14px;
-	padding-bottom: 40px;
-}
-
-.countAvailable i {
-	font-size: 14px;
-	color: #0065FC;
-	border: 3px #F2F2F2 solid;
-	border-radius: 40px;
-	height: 30px;
-	width: 30px;
-	text-align: center;
-}
-
-.countAvailable p {
-	padding: 5px;
-}
-
-/* Fin du Header */
+/* Fin Nav Top */

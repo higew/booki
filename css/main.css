@@ -1,4 +1,4 @@
-/* Début du main */
+/* Début du Header */
 
 main {
 	display: flex;
@@ -7,27 +7,160 @@ main {
 	margin: auto;
 }
 
-main .containerResult {
+main h1 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+main h2 {
+	font-size: 15px;
+	padding-bottom: 20px;
+}
+
+.searchArea {
+	padding-bottom: 40px;
+}
+
+.searchArea form {
+	display: flex;
+	flex-direction: row;
+}
+
+.searchArea form .locPicto{
+	background-color: #F2F2F2;
+	border-radius: 20px 0px 0px 20px;
+	padding: 14px;
+	width: 40px;
+}
+
+.searchArea form input {
+	border: 1px #F2F2F2 solid;
+	border-radius: 0%;
+}
+
+.searchArea form button {
+	border: none;
+	background-color: #0065FC;
+	color: #ffffff;
+	padding: 14px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 0px 20px 20px 0px;
+}
+
+.filter {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 40px;
+}
+
+.filter h3 {
+	padding-top: 14px;
+}
+
+.filter .filters {
+	display: flex;
+	flex-direction: row;
+	border: 2px #F2F2F2 solid;
+	border-radius: 30px;
+	margin-left: 20px;
+}
+
+.filter i {
+	background-color: #DEEBFF;
+	color: #0065FC;
+	/* height: 40px;
+	width: 40px; */
+	padding: 20px;
+	border-radius: 50%;
+}
+
+.filter p {
+	padding: 20px;
+}
+
+@media screen and (max-width: 992px) {
+	.filters {
+		display: flex;
+		flex-direction: row;
+		border: 2px #F2F2F2 solid;
+		border-radius: 10px;
+		margin-left: 20px;
+	}
+
+	.filters i {
+		background-color: #DEEBFF;
+		color: #0065FC;
+		/* height: 40px;
+		width: 40px; */
+		padding: 20px;
+		border-radius: 50%;
+	}
+
+	.filter p {
+		padding: 0px;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+}
+
+
+.countAvailable {
+	display: flex;
+	flex-direction: row;
+	font-size: 14px;
+	padding-bottom: 40px;
+}
+
+.countAvailable i {
+	font-size: 14px;
+	color: #0065FC;
+	border: 3px #F2F2F2 solid;
+	border-radius: 40px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	padding: 5px;
+}
+
+.countAvailable p {
+	padding: 5px;
+}
+
+/* Fin du Header */
+
+/* Début du main */
+
+/* main {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: auto;
+} */
+
+.containerResult {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
     padding-bottom: 50px;
 }
 
-main .containerResult i {
+.containerResult i {
 	color: #0065FC
 }
 
-main .containerResult .blank {
+.containerResult .blank {
 	color: #f2f2f2;
 }
 
-main .containerResult .titleSection {
+.containerResult .titleSection {
 	padding-bottom: 20px;
     font-weight: bold;
 }
 
-main .containerResult .searchResult {
+.containerResult .searchResult {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -37,7 +170,7 @@ main .containerResult .searchResult {
 	border-radius: 40px;
 }
 
-main .containerResult .searchResult .resultRow {
+.containerResult .searchResult .resultRow {
 	background-color: #fff;
 	padding: 5px;
 	border-radius: 10px;
@@ -45,20 +178,20 @@ main .containerResult .searchResult .resultRow {
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
 }
 
-main .containerResult .titleSection {
+.containerResult .titleSection {
     font-size: 20px;
 }
 
-main .containerResult .resultName{
+.containerResult .resultName{
     font-weight: bold;
     padding-bottom: 5px;
 }
 
-main .containerResult .resultPrice {
+.containerResult .resultPrice {
     padding-bottom: 5px;
 }
 
-main .containerResult .searchResult img{
+.containerResult .searchResult img{
 	width: 280px;
 	height: 120px;
 	object-fit: cover;
@@ -66,21 +199,21 @@ main .containerResult .searchResult img{
 	padding-bottom: 5px;
 }
 
-main .containerResult .searchResult .resultFirstRow {
+.containerResult .searchResult .resultFirstRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding-bottom: 20px;
 }
 
-main .containerResult .searchResult .resultSecondRow {
+.containerResult .searchResult .resultSecondRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding-bottom: 20px;
 }
 
-main .containerResult .mostPopular {
+.containerResult .mostPopular {
 	display: flex;
 	flex-direction: column;
 	width: 30%;
@@ -89,17 +222,17 @@ main .containerResult .mostPopular {
 	border-radius: 40px;
 }
 
-main .containerResult .mostPopular .containerTitle {
+.containerResult .mostPopular .containerTitle {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-main .containerResult .mostPopular .containerTitle i {
+.containerResult .mostPopular .containerTitle i {
 	color: black;
 }
 
-main .containerResult .mostPopular .resultColumn {
+.containerResult .mostPopular .resultColumn {
 	background-color: #fff;
 	display: flex;
 	flex-direction: row;
@@ -109,7 +242,7 @@ main .containerResult .mostPopular .resultColumn {
 	margin-bottom: 20px;
 }
 
-main .containerResult .mostPopular .resultColumn img {
+.containerResult .mostPopular .resultColumn img {
 	width: 100px;
 	height: 130px;
 	object-fit: cover;
@@ -118,57 +251,57 @@ main .containerResult .mostPopular .resultColumn img {
 	margin-right: 20px;
 }
 
-main .containerResult .mostPopular .resultColumn .textResultColumn {
+.containerResult .mostPopular .resultColumn .textResultColumn {
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
 }
 
-main .containerResult .mostPopular .resultColumn .stars {
+.containerResult .mostPopular .resultColumn .stars {
 	margin-top: 30px;
 }
 
-main .searchActivity {
+.searchActivity {
 	display: flex;
     flex-direction: column;
     font-weight: bold;
     padding-bottom: 50px;
 }
 
-main .searchActivity .titleSection {
+.searchActivity .titleSection {
 	font-size: 20px;
 }
 
-main .searchActivity p {
+.searchActivity p {
 	padding: 20px;
 }
 
-main .containerActivity {
+.containerActivity {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-main .containerActivity .biggestActivity {
+.containerActivity .biggestActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 }
 
-main .containerActivity .firstSmallerActivity {
+.containerActivity .firstSmallerActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
-	margin-bottom: 20px;
+	margin-bottom: 80px;
 }
 
-main .containerActivity .secondSmallerActivity {
+.containerActivity .secondSmallerActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 }
 
-main .containerActivity .biggestActivity img{
+.containerActivity .biggestActivity img{
 	width: 400px;
 	height: 540px;
 	object-fit: cover;
@@ -176,12 +309,19 @@ main .containerActivity .biggestActivity img{
 	padding-bottom: 5px;
 }
 
-main .containerActivity .smallerActivity img{
+.containerActivity .smallerActivity img{
 	width: 400px;
-	height: 230px;
 	object-fit: cover;
 	border-radius: 10px 10px 0px 0px;
 	padding-bottom: 5px;
+}
+
+.containerActivity .smallerActivity .slightlyBigger img {
+	height: 250px;
+}
+
+.containerActivity .smallerActivity .slightlySmaller img {
+	height: 150px;
 }
 
 /* Fin du main */
