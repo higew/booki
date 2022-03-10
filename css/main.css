@@ -228,6 +228,10 @@ main h2 {
 		justify-content: space-between;
 	}
 
+	.resultRow {
+		margin-bottom: 20px;
+	}
+
 	.resultFirstRow {
 		display: flex;
 		flex-direction: column;
@@ -294,6 +298,10 @@ main h2 {
 @media screen and (max-width: 992px) {
 	.mostPopular {
 		width: 100%;
+	}
+
+	.mostPopular .resultColumn img {
+		width: 300px;
 	}
 }
 
