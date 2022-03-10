@@ -219,6 +219,7 @@ main h2 {
 
 	.searchResult {
 		width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.showResult {
@@ -242,7 +243,7 @@ main h2 {
 	}
 }
 
-.containerResult .mostPopular {
+.mostPopular {
 	display: flex;
 	flex-direction: column;
 	width: 30%;
@@ -251,17 +252,17 @@ main h2 {
 	border-radius: 40px;
 }
 
-.containerResult .mostPopular .containerTitle {
+.mostPopular .containerTitle {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.containerResult .mostPopular .containerTitle i {
+.mostPopular .containerTitle i {
 	color: black;
 }
 
-.containerResult .mostPopular .resultColumn {
+.mostPopular .resultColumn {
 	background-color: #fff;
 	display: flex;
 	flex-direction: row;
@@ -271,7 +272,7 @@ main h2 {
 	margin-bottom: 20px;
 }
 
-.containerResult .mostPopular .resultColumn img {
+.mostPopular .resultColumn img {
 	width: 100px;
 	height: 130px;
 	object-fit: cover;
@@ -280,14 +281,20 @@ main h2 {
 	margin-right: 20px;
 }
 
-.containerResult .mostPopular .resultColumn .textResultColumn {
+.mostPopular .resultColumn .textResultColumn {
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
 }
 
-.containerResult .mostPopular .resultColumn .stars {
+.mostPopular .resultColumn .stars {
 	margin-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+	.mostPopular {
+		width: 100%;
+	}
 }
 
 .searchActivity {
@@ -314,26 +321,26 @@ main h2 {
 	}
 }
 
-.containerActivity .biggestActivity {
+.biggestActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 }
 
-.containerActivity .firstSmallerActivity {
+.firstSmallerActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 	margin-bottom: 80px;
 }
 
-.containerActivity .secondSmallerActivity {
+.secondSmallerActivity {
 	border-radius: 15px;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2); 
 	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
 }
 
-.containerActivity .biggestActivity img{
+.biggestActivity img{
 	width: 400px;
 	height: 540px;
 	object-fit: cover;
@@ -341,19 +348,26 @@ main h2 {
 	padding-bottom: 5px;
 }
 
-.containerActivity .smallerActivity img{
+.smallerActivity img{
 	width: 400px;
 	object-fit: cover;
 	border-radius: 10px 10px 0px 0px;
 	padding-bottom: 5px;
 }
 
-.containerActivity .smallerActivity .slightlyBigger img {
+.smallerActivity .slightlyBigger img {
 	height: 250px;
 }
 
-.containerActivity .smallerActivity .slightlySmaller img {
+.smallerActivity .slightlySmaller img {
 	height: 150px;
+}
+
+@media screen and (max-width: 992px) {
+	.containerActivity img {
+		width: 100%;
+		height: 400px;
+	}
 }
 
 /* Fin du main */

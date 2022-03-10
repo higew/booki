@@ -28,3 +28,9 @@ footer {
 .containerFooter .hosting {
     margin-right: 200px;
 }
+
+@media screen and (max-width: 992px) {
+    .containerFooter {
+
+    }
+}
