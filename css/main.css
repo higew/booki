@@ -355,18 +355,38 @@ main h2 {
 	padding-bottom: 5px;
 }
 
-.smallerActivity .slightlyBigger img {
+.slightlyBigger img {
 	height: 250px;
 }
 
-.smallerActivity .slightlySmaller img {
+.slightlySmaller img {
 	height: 150px;
 }
 
 @media screen and (max-width: 992px) {
+	.biggestActivity {
+		margin-bottom: 20px;
+	}
+
+	.smallerActivity {
+		margin-bottom: 20px;
+	}
+
+	.firstSmallerActivity {
+		margin-bottom: 20px;
+	}
+
 	.containerActivity img {
 		width: 100%;
-		height: 400px;
+		height: 300px;
+	}
+
+	.slightlyBigger img {
+		height: 300px;
+	}
+
+	.slightlySmaller img {
+		height: 300px;
 	}
 }
 
