@@ -68,15 +68,19 @@ main h2 {
 }
 
 .filter i {
+	position: absolute;
 	background-color: #DEEBFF;
 	color: #0065FC;
 	/* height: 40px;
 	width: 40px; */
-	padding: 20px;
+	padding: 23px;
 	border-radius: 50%;
+	margin-top: -2px;
+	margin-left: -2px;
 }
 
 .filter p {
+	margin-left: 50px;
 	padding: 20px;
 }
 
@@ -90,17 +94,19 @@ main h2 {
 	}
 
 	.filters i {
+		position: absolute;
 		background-color: #DEEBFF;
 		color: #0065FC;
 		padding: 20px;
 		border-radius: 50%;
+		margin-top: -2px;
+		margin-left: -2px;
 	}
 
 	.filter p {
-		padding: 0px;
-		margin-top: 20px;
-		margin-left: 10px;
-		margin-right: 20px;
+		margin-left: 55px;
+		padding: 8px 16px 8px 8px;
+		align-self: center;
 	}
 }
 
