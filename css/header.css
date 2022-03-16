@@ -53,4 +53,40 @@ nav .section:hover {
 	transition: 1s;
 }
 
+@media screen and (max-width: 768px) {
+	header {
+		margin-bottom: 20px;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	nav .logo {
+		height: 50px;
+		margin: auto;
+	}
+
+	nav .sections {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	nav .section {
+		width: 50%;
+		padding: 0px;
+		border-bottom: 2px black solid;
+	}
+
+	nav .sections ul {
+		width: 100%;
+		margin: auto;
+		padding: 20px 0px 0px 0px;
+	}
+}
+
 /* Fin Nav Top */

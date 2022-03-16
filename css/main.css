@@ -3,6 +3,8 @@
 main {
 	display: flex;
 	flex-direction: column;
+	max-width: 1920px;
+	margin: auto;;
 	width: 90%;
 	margin: auto;
 }
@@ -15,6 +17,20 @@ main h1 {
 main h2 {
 	font-size: 15px;
 	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		width: 100%;
+	}
+
+	main h1 {
+		padding: 0px 0px 0px 20px;
+	}
+
+	main h2 {
+		padding: 0px 0px 20px 20px;
+	}
 }
 
 .searchArea {
@@ -47,6 +63,12 @@ main h2 {
 	text-decoration: none;
 	display: inline-block;
 	border-radius: 0px 20px 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+	.searchArea {
+		padding: 0px 0px 10px 20px;
+	}
 }
 
 .filter {
@@ -110,6 +132,14 @@ main h2 {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.filter {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0px 0px 10px 20px;
+	}
+}
 
 .countAvailable {
 	display: flex;
@@ -131,6 +161,12 @@ main h2 {
 
 .countAvailable p {
 	padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.countAvailable{
+		padding: 0px 20px 20px 20px;
+	}
 }
 
 /* Fin du Header */
@@ -261,6 +297,29 @@ main h2 {
 	} */
 }
 
+@media screen and (max-width: 768px) {
+	.containerResult {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.searchResult {
+		width: 100%;
+		background-color: #fff;
+		border-radius: 0px;
+	}
+
+	.resultRow {
+		width: 100%;
+	}
+
+	.containerResult .searchResult img{
+		width: 100%;
+	}
+}
+
 .mostPopular {
 	display: flex;
 	flex-direction: column;
@@ -303,6 +362,7 @@ main h2 {
 	display: flex;
 	flex-direction: column;
 	padding-top: 20px;
+	padding-right: 20px;
 }
 
 .mostPopular .resultColumn .stars {
@@ -316,6 +376,21 @@ main h2 {
 
 	.mostPopular .resultColumn img {
 		width: 300px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.mostPopular {
+		width: 100%;
+		border-radius: 0px;
+	}
+
+	.mostPopular .resultColumn {
+	}
+
+	.mostPopular .resultColumn img {
+		width: 100px;
+		height: 150px;
 	}
 }
 
