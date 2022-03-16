@@ -77,6 +77,11 @@ main h2 {
 	padding-bottom: 40px;
 }
 
+.containerFilters {
+	display: flex;
+	flex-direction: row;
+}
+
 .filter h3 {
 	padding-top: 14px;
 }
@@ -138,6 +143,28 @@ main h2 {
 		flex-direction: row;
 		flex-wrap: wrap;
 		padding: 0px 0px 10px 20px;
+	}
+
+	.containerFilters {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.filters i {
+		position: absolute;
+		background-color: #DEEBFF;
+		color: #0065FC;
+		padding: 20px;
+		border-radius: 50%;
+		margin-top: -2px;
+		margin-left: -2px;
+	}
+
+	.filter p {
+		margin-left: 55px;
+		padding: 8px 16px 8px 8px;
+		align-self: center;
 	}
 }
 
@@ -385,9 +412,6 @@ main h2 {
 		border-radius: 0px;
 	}
 
-	.mostPopular .resultColumn {
-	}
-
 	.mostPopular .resultColumn img {
 		width: 100px;
 		height: 150px;
@@ -415,6 +439,13 @@ main h2 {
 	.containerActivity{
 		display: flex;
 		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.searchActivity {
+		width: 100%;
+    	padding: 20px;
 	}
 }
 
@@ -484,6 +515,13 @@ main h2 {
 
 	.slightlySmaller img {
 		height: 300px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.containerActivity img {
+		width: 100%;
+		height: 150px;
 	}
 }
 
