@@ -34,4 +34,14 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    .containerFooter .about {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .containerFooter .hosting {
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
 }
