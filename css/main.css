@@ -69,6 +69,11 @@ main h2 {
 		padding: 0px 0px 10px 20px;
 	}
 
+	.searchArea form button {
+		margin-left: -20px;
+		border-radius: 15px;
+	}
+
 	.searchArea form button i {
 		color: #fff;
 	}
