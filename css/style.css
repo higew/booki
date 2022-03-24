@@ -25,7 +25,15 @@ body {
 	margin-top: -2px;
 }
 
+a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
+	a {
+		width: 100%;
+	}
+
 	.desktop-visible {
 		display: none;
 	}
@@ -35,7 +43,7 @@ body {
 	}
 
 	.selected {
-		margin-top: 2px;
+		margin-top: 0px;
 		border-top: 0px;
 		border-bottom: 2px #0065FC solid !important;
 	}

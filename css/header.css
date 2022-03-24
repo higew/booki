@@ -30,7 +30,7 @@ nav .sections {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	font-style: bold;
+	/* font-style: bold; */
 }
 
 nav .section {
@@ -67,13 +67,12 @@ nav .section {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
-		border-bottom: 2px #F2F2F2 solid;
 	}
 
 	nav .section {
 		text-align: center;
-		width: 50%;
 		padding: 20px;
+		border-bottom: 2px #F2F2F2 solid;
 	}
 }
 
